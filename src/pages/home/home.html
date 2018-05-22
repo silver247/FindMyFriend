@@ -6,16 +6,30 @@
   </ion-navbar>
 </ion-header>
 
-<ion-content padding>
-    <ion-item>
-      <ion-label floating>Username</ion-label>
-      <ion-input type="text" ></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
-  <ion-label></ion-label>
-  <button ion-button block>Signin</button>
-  <button ion-button block outline >Clear</button>
+<ion-content>
+  
+  <ion-grid>
+      <h2 text-center>Find My Friend</h2>
+    <ion-row>
+      <ion-col >
+          <ion-item>
+              <ion-label floating>Username</ion-label>
+              <ion-input type="text" ></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>Password</ion-label>
+              <ion-input type="password"></ion-input>
+            </ion-item>
+            <button ion-button block>Signin</button>
+          <button ion-button block outline color="danger">Do not have an account yet?</button>
+      </ion-col>
+    </ion-row>
+    <hr>
+    <ion-row>
+      <ion-col >
+        <button ion-button block>Login via facebook</button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+  
 </ion-content>
